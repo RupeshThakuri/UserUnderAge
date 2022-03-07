@@ -1,0 +1,84 @@
+body {
+    background-image: url(./image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.popUp-content {
+    background-color: white;
+    width: 30em;
+    height: 15em;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 15px 24px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 15px 24px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 15px 24px 1px rgba(0, 0, 0, 0.75);
+}
+
+.popUp-content h1 {
+    padding-top: 3.5em;
+}
+
+.popUp-content button {
+    height: 3em;
+    width: 10em;
+    margin: 10px 15px 0 0;
+    border: 1px solid rgb(17, 97, 245);
+    background-color: rgb(17, 97, 245);
+    border-radius: 30px;
+    color: white;
+    z-index: 0;
+}
+
+.popUp-content button:hover {
+    background-color: white;
+    color: black;
+}
+
+.secondary-popUp-agree {
+    display: none;
+}
+
+.appear {
+    display: contents;
+    position: absolute;
+    z-index: 1;
+}
+
+.secondary-popUp--content,
+.secondary-popUp-disagree--content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    margin-top: 20px;
+    width: 30em;
+    height: 15em;
+    border-radius: 30px;
+}
+
+.wrong-1 {
+    position: absolute;
+    margin: -110px 0px 0 60px;
+}
+
+.secondary-popUp-disagree {
+    display: none;
+}
+
+.visible {
+    position: absolute;
+    display: contents;
+}
+
+.wrong {
+    position: absolute;
+    margin: -110px 0px 0 5px;
+}
